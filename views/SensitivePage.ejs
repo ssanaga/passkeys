@@ -1,0 +1,17 @@
+<%- include('partials/header') -%>
+
+  <h1 class="text-4xl mb-4">Welcome <%= user.nickname %>
+  </h1>
+
+  <% if (user.picture) { %>
+    <img class="block py-3" src="<%= user.picture %>" width="300">
+    <% } %>
+
+      <p class="py-3">
+        This is a sensitive Page and this contents can be viewed after doing an MFA
+      <pre class="block bg-gray-300 p-4 text-sm overflow-scroll"><%= userAmount %></pre>
+      </p>
+
+
+
+      <%- include('partials/footer') -%>
